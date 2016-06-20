@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>JSON Server</title>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <h4>Routes</h4>
+    <p>
+        Here are the resources that the JSON Server has loaded:
+    </p>
+    <p>
+    <ul id="resources">loading, please wait...</ul>
+    </p>
+
+    <p>
+        You can view database current state at any time:
+    <ul>
+        <li>
+            <a href="db">db</a>
+        </li>
+    </ul>
+    </p>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    $(function () {
+        $.get('db').then(function (data) {
+            $('#resources').empty();
+            $.each(data, function (key, value) {
+                $('#resources')
+                        .append('<li><a href="' + key + '">' + key + '</a></li>');
+            })
+        })
+    })
+</script>
+</body>
+</html>

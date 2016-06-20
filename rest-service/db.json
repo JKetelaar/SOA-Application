@@ -1,0 +1,83 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "code": "KL18AM1",
+      "from": "Amsterdam",
+      "to": "New York",
+      "time": 1466421328,
+      "airline": 1
+    },
+    {
+      "id": 2,
+      "code": "KL27AM1",
+      "from": "New York",
+      "to": "Berlin",
+      "time": 1466461228,
+      "airline": 1
+    },
+    {
+      "id": 3,
+      "code": "AF06AM2",
+      "from": "Capetown",
+      "to": "Madrid",
+      "time": 1566441328,
+      "airline": 2
+    },
+    {
+      "id": 5,
+      "code": "KL02AM6",
+      "from": "Berlin",
+      "to": "Capetown",
+      "time": 1466441328,
+      "airline": 2
+    },
+    {
+      "id": 12,
+      "code": "KL98AM65",
+      "from": "Zurich",
+      "to": "Amsterdam",
+      "time": 1466441328,
+      "airline": 1
+    },
+    {
+      "id": 18,
+      "code": "AFR146",
+      "from": "Paris",
+      "to": "Amsterdam",
+      "time": 1466441328,
+      "airline": 3
+    },
+    {
+      "id": 19,
+      "code": "UAL906",
+      "from": "Frankfurt",
+      "to": "Chicago",
+      "time": 1466441321,
+      "airline": 4
+    }
+  ],
+  "airlines": [
+    {
+      "id": 1,
+      "name": "KLM",
+      "icon": "https://apps.static-afkl.com/travel/nl_en/images/klmlogo_new_tcm542-611911.jpg"
+    },
+    {
+      "id": 2,
+      "name": "African airlines",
+      "icon": "https://1.bp.blogspot.com/-bw6y_wXXKiQ/VCe2wz0NorI/AAAAAAAAA7M/bc12vZDkpW8/s1600/South%2BAfrican%2BAirlines%2BOffice%2Bin%2BBangladesh.gif"
+    },
+    {
+      "id": 3,
+      "name": "Air France",
+      "icon": "https://s.graphiq.com/sites/default/files/3387/media/images/Air_France_1071394.jpg"
+    },
+    {
+      "id": 4,
+      "name": "United Airlines",
+      "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/United_Airlines_Logo.svg/1024px-United_Airlines_Logo.svg.png"
+    }
+  ]
+}
+   
