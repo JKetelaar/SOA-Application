@@ -1,0 +1,13 @@
+<ion-view view-title="Settings">
+    <ion-content>
+        <ion-list>
+            <ion-toggle ng-model="settings.automaticReporting">
+                Enable automatic reporting
+            </ion-toggle>
+            <ion-toggle
+                    ng-repeat="flight in trackedFlights" ng-model="flight.tracking" ng-change="untrack(flight)">
+                Track flight <b>{{flight.code}}</b>
+            </ion-toggle>
+        </ion-list>
+    </ion-content>
+</ion-view>

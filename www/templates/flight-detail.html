@@ -1,0 +1,31 @@
+<ion-view view-title="Flight to {{flight.to}}">
+    <ion-content class="padding">
+
+        <img class="airline-image" ng-src="{{flight.icon}}"/>
+
+        <div class="row">
+            <div class="col">Departures at</div>
+            <div class="col">{{flight.formattedTime}}</div>
+        </div>
+
+        <div class="row">
+            <div class="col">Departures from</div>
+            <div class="col">{{flight.from}}</div>
+        </div>
+
+        <div class="row">
+            <div class="col">Arrives at</div>
+            <div class="col">{{flight.to}}</div>
+        </div>
+
+        <div class="row">
+            <div class="col">Airline</div>
+            <div class="col">{{flight.airlineName}}</div>
+        </div>
+
+        <div class="row">
+            <div class="col">Flight code</div>
+            <div class="col">{{flight.code}}</div>
+        </div>
+    </ion-content>
+</ion-view>

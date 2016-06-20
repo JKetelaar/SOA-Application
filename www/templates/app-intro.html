@@ -1,0 +1,54 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-positive button-clear no-animation"
+                ng-click="startApp()" ng-show="!slideIndex">
+            Skip Intro
+        </button>
+        <button class="button button-positive button-clear no-animation"
+                ng-click="previous()" ng-show="slideIndex > 0">
+            Previous
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-positive button-clear no-animation"
+                ng-click="next()" ng-show="slideIndex != 2">
+            Next
+        </button>
+        <button class="button button-positive button-clear no-animation"
+                ng-click="startApp()" ng-show="slideIndex == 2">
+            Start using Saibot
+        </button>
+    </ion-nav-buttons>
+    <ion-slide-box on-slide-changed="slideChanged(index)">
+        <ion-slide>
+            <h3>Thank you for testing the Saibot App!</h3>
+            <div id="logo">
+                <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/airport.png">
+            </div>
+            <p>
+                We've been working hard on our first release!
+            </p>
+            <p>
+                Hit the next button for a detailed description or hit skip intro, on the left, to go directly to the app
+            </p>
+        </ion-slide>
+        <ion-slide>
+            <h3>Using this app</h3>
+
+            <div id="list">
+                <p>This app allows the following functions:</p>
+                <ol>
+                    <li>Search through flights</li>
+                    <li>Track your flight</li>
+                    <li>See all upcoming flights</li>
+                </ol>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <h3>Any strange things happening?</h3>
+            <p>
+                Please report them to our developers, so they can continuously improve this application.
+            </p>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>
